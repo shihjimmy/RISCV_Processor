@@ -10,7 +10,7 @@
 * 2-way associative cache for Memory
 * Support various instrcutions including compressed ones
 ## RISCV structure
-![](RISCV structure.jpg)
+![](RISCV_structure.jpg)
 ## Run
 You can test different functions through different commands:
 > ### vcs Final_tb.v CHIP.v slow_memory.v -full64 -R -debug_access+all +v2k +define+noHazard
