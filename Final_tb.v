@@ -10,24 +10,24 @@
 
 // For different condition (I_mem, TestBed)
 `ifdef noHazard
-    `define IMEM_INIT "I_mem_noHazard"
-    `include "./TestBed_noHazard.v"
+    `define IMEM_INIT "./HasHazards/I_mem_noHazard"
+    `include "./HasHazards/TestBed_noHazard.v"
 `endif
 `ifdef hasHazard
-	`define IMEM_INIT "I_mem_hasHazard"
-	`include "./TestBed_hasHazard.v"
+	`define IMEM_INIT "./HasHazards/I_mem_hasHazard"
+	`include "./HasHazards/TestBed_hasHazard.v"
 `endif	
 `ifdef BrPred
-	`define IMEM_INIT "I_mem_BrPred"
-	`include "./TestBed_BrPred.v"
+	`define IMEM_INIT "./BrPred/I_mem_BrPred"
+	`include "./BrPred/TestBed_BrPred.v"
 `endif
 `ifdef compression
-	`define IMEM_INIT "I_mem_compression"
-	`include "./TestBed_compression.v"
+	`define IMEM_INIT "./Compression/I_mem_compression"
+	`include "./Compression/TestBed_compression.v"
 `endif
 `ifdef decompression
-	`define IMEM_INIT "I_mem_decompression"
-	`include "./TestBed_compression.v"
+	`define IMEM_INIT "./Compression/I_mem_decompression"
+	`include "./Compression/TestBed_compression.v"
 `endif			
 
 module Final_tb;
