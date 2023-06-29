@@ -1,15 +1,14 @@
 # RISCV_Processor
 ## 5-stage pipelined RISCV processor
-> please check out Report.pdf for more info
-* 5-stage piplined
+* 5-stage pipelined
 * hazards detection unit
 * forwarding units
-* branch prediction unit
+* branch prediction unit (2 bit saturated)
 * decompressor for compressed RISCV instructions
 * read-only cache for Instructions
 * 2-way associative cache for Memory
 * Support various instrcutions including compressed ones
-## RISCV structure
+## full RISCV structure
 ![](RISCV_structure.jpg)
 ## Run
 You can test different functions through different commands:  
